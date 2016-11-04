@@ -1,0 +1,344 @@
+html, body {
+  height: 100%;
+}
+
+a, i, b, strong, em, span {
+  display: inline-block;
+}
+
+header {
+  height: 50px;
+  background-color: #06C1AE;
+  display: flex;
+  color: white;
+  position: relative;
+  line-height: 50px;
+  text-align: center;
+}
+header .icon-icozuola {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+header h2 {
+  flex: 1;
+  line-height: 50px;
+}
+header .i11 {
+  width: 50px;
+  position: absolute;
+  right: 67px;
+  bottom: 10px;
+}
+header .i12 {
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+nav {
+  height: 43px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.nav-list > li {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 43px;
+}
+.nav-list > li:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleX(0.5);
+}
+.nav-list > li:last-child:before {
+  display: none;
+}
+.nav-list > li:last-child {
+  border-right: none;
+}
+
+.menulist {
+  position: absolute;
+  left: 0;
+  top: 95px;
+  width: 100%;
+  height: 400px;
+  z-index: 10;
+  background-color: #F6F4F0;
+  display: none;
+}
+
+.menu1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.menu1 > div {
+  overflow: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #F6F4F0;
+}
+
+.menu1-left {
+  width: 35%;
+  z-index: 100;
+  left: 0;
+}
+.menu1-left li {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.menu1-left li:first-child {
+  background-color: #F6F4F0;
+}
+
+.menu1-right {
+  width: 75%;
+  z-index: 120;
+  right: -5%;
+  background-color: #FFF;
+  margin-left: -10px;
+}
+.menu1-right li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #f6f4f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.iwrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.menu2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.menu2 .line {
+  width: 100%;
+  height: 37px;
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  background: #fff;
+}
+.menu2 .line ul {
+  width: 246px;
+  height: 30px;
+  border: 1px solid #999;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 4px;
+  line-height: 34px;
+  text-align: center;
+}
+.menu2 .line ul li {
+  width: 50%;
+}
+.menu2 .line ul .shop {
+  background: #666;
+  color: white;
+}
+.menu2 .line ul .subway {
+  background: white;
+  color: black;
+}
+
+.menu2-b {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  background-color: #F6F4F0;
+}
+.menu2-b li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.menu2-b li:first-child {
+  background: #F6F4F0;
+}
+
+.menu2-c {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  background-color: #F6F4F0;
+}
+.menu2-c li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.menu3 > div {
+  overflow: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #F6F4F0;
+}
+
+.menu3-0 {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: #F6F4F0;
+}
+.menu3-0 li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.menu3-0 li:first-child {
+  background: #F6F4F0;
+}
+
+.menu4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.menu4 > div {
+  overflow: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #F6F4F0;
+}
+
+.menu4-0 {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: #F6F4F0;
+}
+.menu4-0 li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.menu4-0 li:first-child {
+  background: #F6F4F0;
+}
+
+.detailList {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  background: white;
+}
+.detailList dt {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #ccc;
+}
+.detailList dd {
+  border-bottom: 1px solid #ccc;
+  min-height: 102px;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+.detailList dd a {
+  width: 90px;
+  height: 82px;
+  margin-right: 10px;
+  background: url(../img/4.png) no-repeat;
+  background-size: 100% 100%;
+}
+.detailList dd span {
+  flex: 1;
+}
+.detailList dd span strong {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 15px;
+  color: #333;
+}
+.detailList dd span b {
+  color: #2ECBBB;
+  font-size: 18px;
+}
+.detailList dd span i {
+  font-size: 14px;
+  color: #666;
+}
+.detailList dd span em {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.detailList dd:nth-child(2) a {
+  width: 90px;
+  height: 82px;
+  background: url(../img/r2.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.detailList dd:nth-child(3) a {
+  width: 90px;
+  height: 82px;
+  background: url(../img/r3.jpg) no-repeat;
+  background-size: 100% 100%;
+}

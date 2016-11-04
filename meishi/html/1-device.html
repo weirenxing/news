@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设备信息</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<script type="text/javascript" src="../cordova.js"></script>
+</head>
+<body>
+<!-- 	在调用cordova 的api时，要确认两件事
+	1.页面代码已经加载完成
+	2.设备已经装备就绪 -->
+	<div id="dinfo"></div>
+	开始加载js
+	<script>
+		window.onload=function(){
+			document.addEventListener("deviceready",function(){
+				//使用console.log向logcat打印出调试信息。在使用时，必须先安装cordova-plugin-console插件
+				console.log("deviceready已经执行成功");
+
+				//这个时候，设备已经准备就绪==cordova程序已经初始化完成
+				document.getElementById("dinfo").innerHTML = '设备名称：' + device.name + "<br>" +
+					"平台类型："+ device.platform + "<br>" +
+					"uuid："+ device.uuid + "<br>" +
+					"操作系统：" + device.version + "<br>" +
+					"设备型号：" + device.model + "<br>" +
+					"设备序列号：" + device.serial + "<br>";
+
+				console.log("获取设备信息已完成");
+				
+			},false);
+		}
+	</script>
+</body>
+</html>

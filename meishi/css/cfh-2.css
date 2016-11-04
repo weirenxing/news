@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  font-size: 20px;
+}
+
+body {
+  background: url(../images/bg-page.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.form-wrap {
+  width: 15.85rem;
+  height: 17.975rem;
+  margin: 3.875rem auto 0 auto;
+  background: url(../images/bg-hj.png) no-repeat;
+  background-size: 100% 100%;
+}
+.form-wrap p {
+  position: relative;
+}
+.form-wrap input {
+  color: #fff;
+  height: 1.25rem;
+  width: 8rem;
+  position: relative;
+  line-height: 1.25rem;
+  outline: none;
+  font-size: 0.95rem;
+  border: none;
+  background-color: transparent;
+}
+.form-wrap input::-webkit-input-placeholder {
+  color: #13517d;
+}
+.form-wrap input::-moz-placeholder {
+  color: #13517d;
+}
+.form-wrap input::-ms-input-placeholder {
+  color: #13517d;
+}
+.form-wrap > input:nth-child(1) {
+  top: 7.5rem;
+  margin-left: 4.2rem;
+}
+.form-wrap > input:nth-child(2) {
+  top: 9.625rem;
+  margin-left: 4.2rem;
+}
+.form-wrap > input:nth-child(3) {
+  width: 10.575rem;
+  height: 1.825rem;
+  top: 12.35rem;
+  background: url(../images/btn-login.png) no-repeat;
+  background-size: 100% 100%;
+  margin-left: 2.65rem;
+}
+.form-wrap .active {
+  background-image: url(../images/btn-login-hover.png);
+}
+
+.fire {
+  margin: 0 auto;
+  width: 6rem;
+  height: 7.525rem;
+  background: url(../images/fire.gif) no-repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+.menu li {
+  box-shadow: 1px 1px 5px 5px red;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity={$opacity*100});
+  opacity: 0.2;
+}

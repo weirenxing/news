@@ -1,0 +1,118 @@
+html, body {
+  height: 100%;
+}
+
+a, i, b, strong, em, span {
+  display: inline-block;
+}
+
+header {
+  height: 50px;
+  background-color: #06C1AE;
+  display: flex;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+header i:nth-child(1) {
+  width: 50px;
+}
+header h2 {
+  flex: 1;
+}
+header span {
+  width: 50px;
+  line-height: 25px;
+}
+
+.nav {
+  height: 43px;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  height: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.nav-list > li {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 43px;
+}
+.nav-list > li:before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleX(0.5);
+}
+.nav-list > li:last-child:before {
+  display: none;
+}
+.nav-list > li:last-child {
+  border-right: none;
+}
+
+.menulist {
+  position: absolute;
+  left: 0;
+  top: 43px;
+  width: 100%;
+  height: 400px;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.menu1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.menu1 > div {
+  overflow: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.menu1-left {
+  width: 35%;
+  z-index: 100;
+  left: 0;
+}
+.menu1-left li {
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu1-right {
+  width: 75%;
+  z-index: 120;
+  right: -5%;
+  background-color: #FFF;
+  margin-left: -10px;
+}
+.menu1-right li {
+  height: 44px;
+  line-height: 44px;
+  background-color: #f6f4f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.iwrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}

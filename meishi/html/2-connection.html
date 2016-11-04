@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>判断网络连接</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<script type="text/javascript" src="../cordova.js"></script>
+</head>
+<body>
+	<p>当前网络类型：<span id="netType"></span></p>
+	<p>当前网络状态：<span id="netStatus"></span></p>
+	<script>
+		window.onload = function(){
+			console.info("onload已执行");
+			document.addEventListener("deviceready",function(){
+				console.info("deviceready已执行");
+				getConnectionType();
+
+				//设备连网成功的事件
+				document.addEventListener("online",function(){
+					console.info("online start");
+					document.getElementById("netStatus").innerHTML = "已联网";
+					getConnectionType();
+
+					console.info("online end");
+				},false);
+
+				//设备掉线事件
+				document.addEventListener("offline",function(){
+					document.getElementById("netStatus").innerHTML = "已掉线";
+				},false);
+				
+			},false);
+		}
+
+		//获取网络状态
+		function getConnectionType(){
+			console.info("getConnectionType start");
+			var netType = navigator.connection.type;
+			var netStatus = {};
+
+			netStatus[Connection.UNKNOWN] = "未知类型";
+			netStatus[Connection.ETHERNET] = "内网连接";
+			netStatus[Connection.WIFI] = "WIFI";
+			netStatus[Connection.CELL_2G] = "2G";
+			netStatus[Connection.CELL_3G] = "3G";
+			netStatus[Connection.CELL_4G] = "4G";
+			netStatus[Connection.CELL] = "手机网络";
+			netStatus[Connection.NONE] = "没有网络连接";
+
+			document.getElementById("netType").innerHTML = netStatus[netType];
+			console.info("getConnectionType end");
+		}
+	</script>
+</body>
+</html>
